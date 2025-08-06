@@ -1,7 +1,8 @@
 import Link from "next/link";
 
-import { LoginForm } from "@/components/login-form";
 import Image from "next/image";
+import { LoginForm } from "@/components/auth/login-form";
+import { Activity } from "lucide-react";
 
 export default function LoginPage() {
   return (
@@ -9,8 +10,11 @@ export default function LoginPage() {
       <div className="flex w-full max-w-sm flex-col gap-6">
         <Link
           href="/"
-          className="flex items-center gap-2 self-center font-medium"
+          className="flex items-center gap-2 self-center font-bold"
         >
+          <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
+            <Activity className="size-4" />
+          </div>
           GAVHC-BP
         </Link>
         <LoginForm />
