@@ -49,7 +49,7 @@ export default async function RootLayout({
         >
           <ActiveThemeProvider initialTheme={activeThemeValue}>
             {children}
-            <Toaster className="top-right" />
+            <Toaster position="top-right" />
           </ActiveThemeProvider>
         </ThemeProvider>
       </body>
