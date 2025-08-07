@@ -25,7 +25,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { LogOut } from "lucide-react";
-import { useLogout } from "@/hooks/useLogout";
+import { useLogout } from "@/hooks/use-logout";
 
 export function NavUser({
   user,
@@ -98,7 +98,7 @@ export function NavUser({
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={handleLogout}>
-              <LogOut className="mr-2 size-4" />
+              <LogOut className="size-4" />
               Logout
             </DropdownMenuItem>
           </DropdownMenuContent>
