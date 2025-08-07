@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { LoginForm } from "@/components/auth/login-form";
+import { LoginForm } from "@/components/forms/login-form";
 import { Activity } from "lucide-react";
 
 export default function LoginPage() {

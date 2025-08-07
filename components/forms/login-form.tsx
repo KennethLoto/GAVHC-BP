@@ -21,7 +21,7 @@ import {
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
 
-import { useLoginForm } from "@/hooks/useLoginForm";
+import { useLoginForm } from "@/hooks/use-login";
 
 export function LoginForm({
   className,

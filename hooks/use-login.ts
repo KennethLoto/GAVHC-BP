@@ -12,11 +12,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 export const formSchema = z.object({
   email: z.string().nonempty("Email is required").email("Invalid email"),
   password: z.string().nonempty("Password is required"),
-  // .min(8, "Password must be at least 8 characters long")
-  // .regex(
-  //   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#^-_])[A-Za-z\d@$!%*?&#^-_]{8,}$/,
-  //   "Password must include uppercase, lowercase, number, and special character"
-  // ),
 });
 
 export function useLoginForm() {
